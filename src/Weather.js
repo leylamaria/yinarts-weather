@@ -5,7 +5,7 @@ export default function Weather() {
   return (
     <div className="Weather">
       <form>
-        <div className="row">
+        <div className="row g-2">
           <div className="col-9">
             <input
               type="search"
