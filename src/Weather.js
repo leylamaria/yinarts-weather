@@ -11,10 +11,11 @@ export default function Weather() {
               type="search"
               placeholder="Enter a city.."
               className="form-control"
+              autoFocus="on"
             />
           </div>
           <div className="col-3">
-            <input type="submit" value="Search" className="btn btn-primary" />
+            <input type="submit" value="Search" className="btn w-100" />
           </div>
         </div>
       </form>
@@ -23,13 +24,17 @@ export default function Weather() {
         <li>Tuesday, 10:07</li>
         <li>Clear Sky</li>
       </ul>
-      <div className="row">
-        <div className="col-6">⛅️ 13 °C</div>
+      <div className="row mt-4 text-end">
         <div className="col-6">
+          <span className="icon">⛅️</span>
+          <span className="temperature">13 </span>
+          <span className="unit">°C</span>
+        </div>
+        <div className="col-6 ">
           <ul>
             <li>Wind: 11 km/h</li>
             <li>Wind direction: NW</li>
-            <li> Humidity: 33%</li>
+            <li>Humidity: 33%</li>
           </ul>
         </div>
       </div>

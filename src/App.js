@@ -16,13 +16,21 @@ export default function App() {
             >
               Leyla Maria{" "}
             </a>
-            and is{" "}
+            is open-sourced on{" "}
             <a
               href="https://github.com/leylamaria/yinarts-weather"
               target="_blank"
               rel="noreferrer"
             >
-              open-sourced on GitHub
+              GitHub{" "}
+            </a>
+            and hosted on{" "}
+            <a
+              href="https://yinarts-weather.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Netlify
             </a>
           </p>
         </footer>
