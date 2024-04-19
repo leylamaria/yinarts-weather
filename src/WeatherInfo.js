@@ -1,6 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherTemperature from "./WeatherTemperature";
+import WindDirection from "./WindDirection";
 import "./WeatherInfo.css";
 export default function WeatherInfo(props) {
   return (
@@ -17,7 +18,7 @@ export default function WeatherInfo(props) {
               Wind :<strong> {props.data.wind} km/h</strong>
             </li>
             <li>
-              Wind direction :<strong> {props.data.direction}°</strong>{" "}
+              <WindDirection direction={props.data.direction} />{" "}
             </li>
             <li className="text-capitalize">{props.data.description}</li>
           </ul>
