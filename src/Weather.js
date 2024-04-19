@@ -50,7 +50,7 @@ export default function Weather(props) {
               <input
                 type="search"
                 placeholder="Enter a city.."
-                className="form-control"
+                className="form-control search-input"
                 autoFocus="on"
                 onChange={handleCityChange}
               />
@@ -61,6 +61,34 @@ export default function Weather(props) {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
+        <footer>
+          <p>
+            This project was coded by{" "}
+            <a
+              href="https://yinarts.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Leyla Maria{" "}
+            </a>
+            is open-sourced on{" "}
+            <a
+              href="https://github.com/leylamaria/yinarts-weather"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub{" "}
+            </a>
+            and hosted on{" "}
+            <a
+              href="https://yinarts-weather.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Netlify
+            </a>
+          </p>
+        </footer>
       </div>
     );
   } else {

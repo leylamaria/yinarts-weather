@@ -2,52 +2,89 @@
   background-color: rgb(245, 245, 245, 0.05);
   border: 2px solid rgb(245, 245, 245, 0.7);
   border-radius: 10px;
-  padding: 30px;
+  box-shadow: 0px 30px 50px rgb(245, 245, 245, 0.3);
+  padding: 40px 40px 10px;
 }
 
-.Weather .form-control {
-  background: rgb(245, 245, 245, 0.2);
-  padding: 10px 20px;
+.Weather .search-input {
+  background: rgb(245, 245, 245, 0.4);
+  border: none;
+  border-radius: 8px;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+  padding: 15px 20px;
 }
-.form-control::placeholder {
+.Weather .search-input::placeholder {
   color: rgba(0, 0, 0, 0.7);
 }
 .Weather .btn {
   background-color: rgb(237, 77, 119, 0.7);
   color: rgba(0, 0, 0, 0.9);
   font-size: 18px;
-  padding: 10px 20px;
-}
-.Weather h1 {
-  font-size: 26px;
   font-weight: 500;
-  margin: 20px 0;
-  line-height: 30px;
+  padding: 15px 0;
+  line-height: 1.5;
+}
+.WeatherInfo h1 {
+  font-size: 38px;
+  font-weight: 700;
   text-transform: uppercase;
 }
-.Weather ul {
+.WeatherInfo .FormattedDate {
+  font-size: 24px;
+  font-weight: 400;
+}
+.WeatherInfo ul {
   margin: 0;
   padding: 0;
 }
-.Weather li {
+.WeatherInfo li {
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
   list-style: none;
 }
-
-.Weather .temperature {
-  font-weight: 600;
-  color: rgb(245, 245, 245, 0.7);
-  font-size: 66px;
-  line-height: 64px;
-  position: relative;
-  top: 20px;
+.WeatherInfo li strong {
+  color: rgb(237, 77, 119);
 }
-.Weather .unit {
-  color: rgb(245, 245, 245, 0.7);
-  font-size: 26px;
+
+.WeatherTemperature .temperature {
+  font-weight: 600;
+  font-size: 66px;
+  margin-right: 5px;
+}
+.WeatherTemperature .unit {
+  font-size: 22px;
   font-weight: 400;
   position: relative;
-  top: -10px;
+  top: -32px;
+}
+.WeatherTemperature .unit a {
+  color: rgb(245, 245, 245, 0.7);
+  text-decoration: none;
+}
+.Weather footer {
+  font-size: 12px;
+  margin-top: 40px;
+  text-align: center;
+}
+.Weather footer a {
+  color: rgb(237, 77, 119);
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  .WeatherInfo h1 {
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .WeatherTemperature .unit {
+    font-size: 16px;
+  }
+  .WeatherInfo li {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+  }
 }

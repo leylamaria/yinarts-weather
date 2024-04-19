@@ -1,19 +1,15 @@
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)),
     url("/public/images/sunset-vect.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   color: rgb(245, 245, 245, 0.7);
   font-family: "Outfit", sans-serif;
   max-width: 600px;
-  margin: 240px auto;
+  margin: 160px auto;
 }
-.App footer {
-  font-size: 12px;
-  margin: 10px 0;
-  text-align: center;
-}
-.App footer a {
-  color: rgb(237, 77, 119);
-  text-decoration: none;
+@media (max-width: 800px) {
+  body {
+    margin: 60px auto;
+  }
 }
