@@ -44,6 +44,17 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div className="Weather">
+        <a
+          href="https://yinarts.netlify.app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/images/logo-yinarts.png"
+            className="logo"
+            alt="YinArts Logo"
+          />
+        </a>
         <form onSubmit={handleSubmit}>
           <div className="row g-2">
             <div className="col-9">
