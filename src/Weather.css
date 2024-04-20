@@ -41,6 +41,11 @@
   font-weight: 700;
   text-transform: uppercase;
 }
+.WeatherInfo h2 {
+  font-size: 26px;
+  border-bottom: 1px solid rgb(237, 77, 119, 0.1);
+  padding: 0 0 20px;
+}
 .WeatherInfo .FormattedDate {
   font-size: 24px;
   font-weight: 400;
@@ -62,7 +67,6 @@
 .WeatherTemperature .temperature {
   font-weight: 600;
   font-size: 66px;
-  margin-right: 5px;
 }
 .WeatherTemperature .unit {
   font-size: 22px;
