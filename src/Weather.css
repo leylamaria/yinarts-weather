@@ -88,6 +88,9 @@
   text-decoration: none;
 }
 @media (max-width: 800px) {
+  .Weather {
+    padding: 30px 20px 10px;
+  }
   .WeatherInfo h1 {
     font-size: 28px;
     font-weight: 700;
