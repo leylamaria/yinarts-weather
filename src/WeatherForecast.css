@@ -1,7 +1,13 @@
 .WeatherForecast {
   text-align: center;
-  border-top: 1px solid rgb(237, 77, 119, 0.1);
-  border-bottom: 1px solid rgb(237, 77, 119, 0.1);
-  margin: 40px 0;
   padding: 20px 0;
+}
+.WeatherForecastDay .WeatherForecastDay-day {
+  color: rgb(237, 77, 119, 0.8);
+}
+.WeatherForecastDay .WeatherForecastDay-icon {
+  max-width: 75px;
+}
+.WeatherForecastDay .WeatherForecastDay-wind-speed {
+  font-size: 12px;
 }

@@ -12,7 +12,6 @@
 }
 .Weather form {
   margin-top: 20px;
-  border-bottom: 1px solid rgb(237, 77, 119, 0.1);
   padding-bottom: 20px;
 }
 .Weather .search-input {
@@ -67,6 +66,7 @@
 .WeatherTemperature .temperature {
   font-weight: 600;
   font-size: 66px;
+  margin-right: 4px;
 }
 .WeatherTemperature .unit {
   font-size: 22px;
@@ -87,12 +87,7 @@
   color: rgb(237, 77, 119);
   text-decoration: none;
 }
-.WeatherForecastDay .WeatherForecastDay-icon {
-  max-width: 75px;
-}
-.WeatherForecastDay .WeatherForecastDay-wind-speed {
-  font-size: 12px;
-}
+
 @media (max-width: 800px) {
   .Weather {
     padding: 30px 20px 10px;

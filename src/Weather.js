@@ -8,6 +8,7 @@ import "./Weather.css";
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
+
   function handleResponse(response) {
     setWeatherData({
       ready: true,
@@ -27,13 +28,6 @@ export default function Weather(props) {
     });
   }
 
-  function search() {
-    const apiKey = "445od433c4e95b2d074a20e8fb1cta30";
-    let units = "metric";
-    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=${units}`;
-    axios.get(apiUrl).then(handleResponse);
-  }
-
   function handleSubmit(event) {
     event.preventDefault();
     search();
@@ -41,6 +35,14 @@ export default function Weather(props) {
 
   function handleCityChange(event) {
     setCity(event.target.value);
+  }
+
+  function search() {
+    const apiKey = "445od433c4e95b2d074a20e8fb1cta30";
+    let units = "metric";
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=${units}`;
+
+    axios.get(apiUrl).then(handleResponse);
   }
 
   if (weatherData.ready) {
@@ -64,7 +66,6 @@ export default function Weather(props) {
                 type="search"
                 placeholder="Enter a city.."
                 className="form-control search-input"
-                autoFocus="on"
                 onChange={handleCityChange}
               />
             </div>
@@ -109,8 +110,8 @@ export default function Weather(props) {
     search();
     return (
       <Hearts
-        height="140"
-        width="140"
+        height="120"
+        width="120"
         color="rgba(237, 77, 119)"
         ariaLabel="hearts-loading"
         wrapperStyle={{}}
