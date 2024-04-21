@@ -87,6 +87,12 @@
   color: rgb(237, 77, 119);
   text-decoration: none;
 }
+.WeatherForecastDay .WeatherForecastDay-icon {
+  max-width: 75px;
+}
+.WeatherForecastDay .WeatherForecastDay-wind-speed {
+  font-size: 12px;
+}
 @media (max-width: 800px) {
   .Weather {
     padding: 30px 20px 10px;

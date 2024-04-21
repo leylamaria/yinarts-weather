@@ -12,14 +12,14 @@ export default function WeatherForecastDay(props) {
 
   return (
     <div className="WeatherForecastDay">
-      <div className="WeatherForecast-day"> {day()} </div>
+      <div className="WeatherForecastDay-day"> {day()} </div>
       <img
         src={props.data.condition.icon_url}
         alt={props.data.condition.description}
-        className="WeatherForecast-icon"
+        className="WeatherForecastDay-icon"
       />
 
-      <div className="WeatherForecast-wind-speed">
+      <div className="WeatherForecastDay-wind-speed">
         {Math.round(props.data.wind.speed)} km/h
       </div>
     </div>
