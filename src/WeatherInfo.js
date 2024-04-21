@@ -3,6 +3,7 @@ import FormattedDate from "./FormattedDate";
 import WeatherTemperature from "./WeatherTemperature";
 import WindDirection from "./WindDirection";
 import "./WeatherInfo.css";
+
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
@@ -16,7 +17,7 @@ export default function WeatherInfo(props) {
         <div className="col-6 ">
           <ul>
             <li>
-              Wind :<strong> {props.data.wind} km/h</strong>
+              Wind:<strong> {props.data.wind} km/h</strong>
             </li>
             <li>
               <WindDirection direction={props.data.direction} />{" "}
